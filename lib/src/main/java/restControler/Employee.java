@@ -6,8 +6,14 @@ public class Employee {
 	  private String name;
 	  private String role;
 
-	  Employee() {}
+	  Employee(EmployeeEntity entity) {
+		  this.name = entity.getName();
+		  this.role = entity.getRole();
+	  }
 
+	  Employee() {
+		  
+	  }
 	  Employee(String name, String role) {
 	    this.name = name;
 	    this.role = role;
